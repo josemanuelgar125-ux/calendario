@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planificación semanal</title>
+  <style>
+    body {
+      font-family: "Times New Roman", serif;
+      margin: 8px;
+    }
+
+    h1 {
+      text-align: left;
+    }
+
+    table {
+      width: 100%;
+      border: 3px dotted black;
+      border-spacing: 5px;          /* separación entre celdas */
+      border-collapse: separate;    /* necesario para que funcione border-radius */
+      padding: 2px;
+    }
+
+    th, td {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      text-align: center;
+      height: 40px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: black;
+      border-radius: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    /* Cabeceras (fondo oscuro, texto blanco) */
+    th {
+      background-color: #333333;
+      color: white;
+      height: 60px;
+      width: 12%;
+    }
+
+    /* Colores de las celdas */
+    .azul {
+      background-color: #0a50ff;
+    }
+
+    .celeste {
+      background-color: #dcf8f8;
+    }
+
+    /* Filas pares / impares */
+    tr:nth-child(even) {
+      background-color: #D6EEEE;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #F2F2F2;
+    }
+
+    /* Cambio de color al pasar el ratón por la fila */
+    tr:hover {
+      background-color: #D6EEEE;
+    }
+
+    /* Extra: se nota el hover en las celdas */
+    td:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Planificación semanal</h1>
+
+  <table>
+    <tr>
+      <th>Bloques horarios</th>
+      <th>Lunes</th>
+      <th>Martes</th>
+      <th>Miércoles</th>
+      <th>Jueves</th>
+      <th>Viernes</th>
+      <th>Sábado</th>
+      <th>Domingo</th>
+    </tr>
+
+    <tr>
+      <th>Mañana</th>
+      <td class="azul">Estudiar</td>
+      <td class="celeste">Estudiar</td>
+      <td class="azul">Estudiar</td>
+      <td class="celeste">Estudiar</td>
+      <td class="azul">Estudiar</td>
+      <td class="celeste" rowspan="2">Estudiar</td>
+      <td class="azul" rowspan="2">Descansar</td>
+    </tr>
+
+    <tr>
+      <th>tarde</th>
+      <td class="azul" colspan="5">Clases IES Miralcamp - 1ro DAW</td>
+    </tr>
+  </table>
+
+</body>
+</html>
